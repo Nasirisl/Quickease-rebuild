@@ -21,7 +21,7 @@ const HowAndWhy = () => {
   { icon: "📍", title: "Live Tracking", desc: "Track your orders in real-time from pickup to delivery." },
   ];
 
-  useEffect(() => {
+  useEffect(() => {  
     cardsRef.current.forEach((card, index) => {
       gsap.fromTo(
         card,
