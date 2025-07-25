@@ -1,0 +1,106 @@
+/* Base layout */
+.about-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #2C7B34;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section titles and spacing */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2C7B34;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* Our Story and Vision */
+.our-story p,
+.vision-values ul,
+.why-quickease p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Vision list */
+.vision-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vision-values li {
+  background-color: #f3f9f3;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-left: 4px solid #2C7B34;
+  font-weight: 500;
+}
+
+/* Why QuickEase */
+.why-quickease {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Timeline */
+.timeline {
+  margin-top: 40px;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  background: #edf7ed;
+  border-left: 6px solid #2C7B34;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transform: translateX(100px); /* Default off-screen (GSAP overrides this on scroll) */
+  opacity: 0;
+}
+
+.timeline-item .year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2C7B34;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .timeline-item {
+    padding: 15px 20px;
+  }
+
+  .timeline-item .year {
+    font-size: 1.3rem;
+  }
+}

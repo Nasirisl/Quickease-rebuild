@@ -1,0 +1,154 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f7ff;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(43, 112, 228, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.auth-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.auth-toggle button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  color: #444;
+}
+
+.auth-toggle .active {
+  color: #2c7b34;
+  border-color: #2c7b34;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  padding: 12px 3px;
+  border-radius: 10px;
+  border: 1px solid #d0d6dd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.auth-form input:focus {
+  border-color: #2c7b34;
+  box-shadow: 0 0 0 3px rgba(43, 112, 228, 0.1);
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #2c7b34;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+}
+
+.submit-btn:hover {
+  background: #2c7b34;
+}
+
+.remember-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: -8px;
+  text-align: left;
+}
+
+.auth-switch {
+  margin-top: 18px;
+  font-size: 14px;
+}
+    
+.auth-switch span {
+  color: #2c7b34;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+
+  .auth-toggle button {
+    font-size: 15px;
+  }
+
+  .auth-form input {
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+  }
+
+  .auth-switch {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 25px 15px;
+  }
+
+  .auth-toggle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-toggle button {
+    width: 100%;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .remember-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
